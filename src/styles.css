@@ -1,0 +1,60 @@
+.calculator {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  input {
+    /* grid-row: 1; */
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .output {
+    grid-row: 2;
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the calculator buttons */
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  button:active {
+    background-color: #d9d9d9;
+  }
+  
+  /* Style for the clear button */
+  button:nth-child(15) {
+    background-color: #ff6666;
+    color: white;
+  }
+  
+  /* Style for the equal button */
+  button:nth-child(17) {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Style for the operator buttons (+, -, *, /) */
+  button:nth-child(6),
+  button:nth-child(10),
+  button:nth-child(14),
+  button:nth-child(18) {
+    background-color: #2196f3;
+    color: white;
+  }
+  
